@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Aidan Barends</title>
+    
+    <link rel="stylesheet" href="CSS/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+    <style>
+        .aligned-home {
+            margin-left: 13%;
+        }
+
+        .aligned-skills {
+            margin-left: 13%;
+        }
+
+        .home-content {
+            display: flex; 
+            align-items: center; 
+            margin-bottom: 20px; 
+        }
+
+        .profile {
+            margin-left: 20px; 
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="images/Logo1.png" style="width: 140px; height: auto; position: absolute; top: -10px; right: 10px;" alt="Logo">
+        </div>
+        
+        <nav class="nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Projects</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="home aligned-home"> 
+            <div class="home-content">
+                <div class="text-content"> 
+                    <h2 class="greeting">Good day, It's me</h2>
+                    <h1 class="name">Aidan Jr</h1>
+                    <h1 class="surname">Barends</h1>
+                    <h3 class="role-text">And I'm a <span class="pro-text"></span></h3>
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function() {
+                            var typed = new Typed(".pro-text", {
+                                strings: [
+                                    "Backend Developer",
+                                    "Networking Engineer",
+                                    "Web Developer",
+                                    "Computer Hardware Engineer",
+                                    "Multimedia Specialist",
+                                    "Software Engineer"
+
+                                ],
+                                typeSpeed: 100,
+                                backSpeed: 100,
+                                backDelay: 1000,
+                                loop: true
+                            });
+                        });
+                    </script>
+
+                    <p class="description">I am currently an IT student at CPUT specializing in Applications Development. I’m passionate about designing and building innovative software solutions.<br><br>
+                    My journey in tech is driven by curiosity and a love for problem-solving, and I’m always eager to learn and apply new technologies to real-world challenges.</p>
+                    <p class="description">My portfolio showcases my passion for software development and my dedication to creating innovative, reliable, and user-focused applications.</p><br>
+                </div>
+
+                <div class="profile">
+                    <img src="images/adb.JPEG" alt="Aidan Barends" style="width: 200px; height: auto;">
+                </div>
+            </div>
+        </section>
+
+        <section class="skills aligned-skills"> 
+            <h2>Skills</h2><br>
+            <div class="container">
+                <div class="block">
+                    <img src="images/html.png" alt="HTML" class="skill-image">
+                    <div class="hover-text">
+                        <p class="skill-text">Hypertext Markup Language</p>
+                    </div>
+                </div>
+                <div class="block">
+                    <img src="images/css.png" alt="CSS" class="skill-image">
+                    <div class="hover-text">
+                        <p class="skill-text">Cascading Style Sheet</p>
+                    </div>
+                </div>
+                <div class="block">
+                    <img src="images/js.png" alt="JavaScript" class="skill-image">
+                    <div class="hover-text">
+                        <p class="skill-text">JavaScript</p>
+                    </div>
+                </div>
+                <div class="block">
+                    <img src="images/java.png" alt="Java" class="skill-image">
+                    <div class="hover-text">
+                        <p class="skill-text">Java Developer</p>
+                    </div>
+                </div>
+                <div class="block">
+                    <img src="images/vs code.png" alt="VS Code" class="skill-image">
+                    <div class="hover-text">
+                        <p class="skill-text">Visual Studio Code</p>
+                    </div>
+                </div>
+                <div class="block">
+                    <img src="images/Cisco.png" alt="Cisco" class="skill-image">
+                    <div class="hover-text">
+                        <p class="skill-text">Packet Tracer</p>
+                    </div>
+                </div>
+                <div class="block">
+                    <img src="images/Python.png" alt="Python" class="skill-image">
+                    <div class="hover-text">
+                        <p class="skill-text">Python</p>
+                    </div>
+                </div>
+                <div class="block">
+                    <img src="images/virtu.png" alt="Virtualization" class="skill-image">
+                    <div class="hover-text">
+                        <p class="skill-text">Virtualization</p>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Aidan Barends. All rights reserved.</p>
+    </footer>
+</body>
+</html>
